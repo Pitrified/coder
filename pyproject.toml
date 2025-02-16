@@ -1,0 +1,30 @@
+[project]
+name = "coder"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chroma-haystack>=2.0.1",
+    "haystack-ai>=2.10.0",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+    "loguru>=0.7.3",
+    "nbformat>=5.10.4",
+    "openai>=1.63.0",
+    "rich>=13.9.4",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+example-pkg = "example_pkg:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]
